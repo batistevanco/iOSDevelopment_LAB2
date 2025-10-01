@@ -28,7 +28,8 @@ struct DepartureView: View {
                 Text("")
                 Text(flight.arrivalTime).font(.system(size:20))
             }
-        }.padding(.bottom, 40)
+        }.frame(maxHeight: .infinity, alignment: .top) // DUWT ALLES OMHOOG
+            .padding(.top, 40) // extra marge vanboven
 
         
         Grid(horizontalSpacing: 100) {
@@ -64,7 +65,8 @@ struct DepartureView: View {
                 .background(Color.green)
                 .foregroundColor(.white)
                 .cornerRadius(12)
-                .padding(.bottom, 40)
+                .padding(.bottom, 40).frame(maxHeight: .infinity, alignment: .top) // DUWT ALLES OMHOOG
+                .padding(.top, 10) // extra marge vanboven
         
         HStack{
             VStack{
@@ -80,7 +82,8 @@ struct DepartureView: View {
             VStack{
                 Image(systemName: "person.crop.artframe").resizable().scaledToFit().frame(width: 200,height:150)
             }
-        }
+        }.frame(maxHeight: .infinity, alignment: .top) // DUWT ALLES OMHOOG
+           
     }//
 }
 

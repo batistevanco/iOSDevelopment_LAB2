@@ -15,12 +15,12 @@ struct homeView: View {
     var body: some View {
         ScrollView{
             if UIDevice.current.userInterfaceIdiom == .phone {
-                Image("Barcelona").resizable().scaledToFit().frame(width: 50,height:50)
+                Image("Barcelona").resizable().scaledToFit().frame(width: 300,height:300)
             } else if UIDevice.current.userInterfaceIdiom == .pad{
-                Image("Barcelona").resizable().scaledToFit().frame(width: 200,height:200)
+                Image("Barcelona").resizable().scaledToFit().frame(width: 400,height:400)
             }
             else if UIDevice.current.userInterfaceIdiom == .mac{
-                Image("Barcelona").resizable().scaledToFit().frame(width: 220,height:220)
+                Image("Barcelona").resizable().scaledToFit().frame(width: 500,height:500)
             }
             
             Text("Barcelona").foregroundColor(Color.green).font(.system(size:45)).fontWeight(.bold)
