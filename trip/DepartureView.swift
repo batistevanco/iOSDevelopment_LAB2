@@ -78,7 +78,7 @@ struct DepartureView: View {
             }
             .padding()
             VStack{
-                Image("Person").resizable().scaledToFit().frame(width: 100,height:100)
+                Image(systemName: "person.crop.artframe").resizable().scaledToFit().frame(width: 200,height:150)
             }
         }
     }//
